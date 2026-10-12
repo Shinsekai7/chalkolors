@@ -20,7 +20,10 @@
     "console"
   ],
   "author": "eureka_seven",
-  "repository": "Shinsekai7/chalkolors",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Shinsekai7/chalkolors.git"
+  },
   "license": "(ISC AND MIT)",
   "devDependencies": {
     "ansi-colors": "^4.1.1",
