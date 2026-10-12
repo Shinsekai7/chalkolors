@@ -1,0 +1,27 @@
+name: Testing
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  modern:
+    name: Node v${{ matrix.node-version }}
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version:
+          - 24
+          - 22
+          - 20
+          - 18
+          - 16
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node-version }}
+      - run: node tests/test.js
+      - run: node tests/environments.js

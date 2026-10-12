@@ -1,0 +1,49 @@
+{
+  "name": "chalkolors",
+  "version": "1.0.0",
+  "main": "./chalkolors.js",
+  "types": "./chalkolors.d.ts",
+  "sideEffects": false,
+  "description": "A tiny and fast library for terminal output formatting with ANSI colors",
+  "scripts": {
+    "test": "node tests/test.js"
+  },
+  "files": [
+    "chalkolors.*",
+    "types.d.ts"
+  ],
+  "keywords": [
+    "terminal",
+    "colors",
+    "formatting",
+    "cli",
+    "console"
+  ],
+  "author": "eureka_seven",
+  "repository": "Shinsekai7/chalkolors",
+  "license": "(ISC AND MIT)",
+  "devDependencies": {
+    "ansi-colors": "^4.1.1",
+    "chalk": "^4.1.2",
+    "clean-publish": "^3.0.3",
+    "cli-color": "^2.0.0",
+    "colorette": "^2.0.12",
+    "esbuild": "^0.28.2",
+    "kleur": "^4.1.4",
+    "mitata": "^1.0.10",
+    "nanocolors": "^0.2.12",
+    "prettier": "^3.3.3",
+    "yoctocolors": "^2.2.0"
+  },
+  "prettier": {
+    "printWidth": 100,
+    "useTabs": true,
+    "tabWidth": 2,
+    "semi": false,
+    "arrowParens": "avoid",
+    "requirePragma": true
+  },
+  "clean-publish": {
+    "cleanDocs": true
+  }
+}
